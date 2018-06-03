@@ -1,0 +1,137 @@
+0 silly input [ 'publish' ]
+1 silly flags { _: [ 'publish' ], 'reject-cycles': false, rejectCycles: false }
+2 verbose rootPath /Users/zhouqihang/Html/vue-lerna-demo
+3 info version 2.11.0
+4 silly isInitialized
+5 silly isInitialized true
+6 silly existsSync /Users/zhouqihang/Html/vue-lerna-demo/VERSION
+7 silly initialize attempt
+8 info current version 0.0.0
+9 silly isDetachedHead
+10 silly getCurrentBranch
+11 verbose getCurrentBranch master
+12 verbose isDetachedHead false
+13 silly getCurrentBranch
+14 verbose getCurrentBranch master
+15 silly getUpdates
+16 info Checking for updated packages...
+17 silly hasTags
+18 verbose hasTags false
+19 info Comparing with initial commit.
+20 verbose updated load
+21 verbose updated todo
+22 verbose updated todos
+23 info Checking for prereleased packages...
+24 silly collectDependents
+25 silly isPackageDependentOf load load
+26 silly isPackageDependentOf load todo
+27 silly isPackageDependentOf load todos
+28 silly isPackageDependentOf todo load
+29 silly isPackageDependentOf todo todo
+30 silly isPackageDependentOf todo todos
+31 silly isPackageDependentOf todos load
+32 silly isPackageDependentOf todo load
+33 silly isPackageDependentOf todos todo
+34 verbose dependent todos depends on todo
+35 silly isPackageDependentOf todos todos
+36 silly isPackageDependentOf todo todos
+37 silly collectUpdates
+38 verbose has filtered update load
+39 verbose has filtered update todo
+40 verbose has filtered update todos
+41 silly initialize success
+42 silly execute attempt
+43 silly addFile /Users/zhouqihang/Html/vue-lerna-demo/lerna.json
+44 silly runScriptSync preversion vue-lerna-demo
+45 silly runScriptSync preversion load
+46 silly runScriptSync version load
+47 silly runScriptSync preversion todo
+48 silly runScriptSync version todo
+49 silly runScriptSync preversion todos
+50 silly runScriptSync version todos
+51 silly runScriptSync version vue-lerna-demo
+52 silly addFile /Users/zhouqihang/Html/vue-lerna-demo/packages/load/package.json
+53 silly addFile /Users/zhouqihang/Html/vue-lerna-demo/packages/todo/package.json
+54 silly addFile /Users/zhouqihang/Html/vue-lerna-demo/packages/todos/package.json
+55 silly commit v1.0.0
+56 verbose commit [ 'commit', '--no-verify', '-m', 'v1.0.0' ]
+57 silly addTag v1.0.0
+58 silly runScriptSync postversion load
+59 silly runScriptSync postversion todo
+60 silly runScriptSync postversion todos
+61 silly runScriptSync postversion vue-lerna-demo
+62 info publish Publishing packages to npm...
+63 silly existsSync /Users/zhouqihang/Html/vue-lerna-demo/packages/load/scripts/prepublish.js
+64 verbose execScript No prepublish script found at /Users/zhouqihang/Html/vue-lerna-demo/packages/load/scripts/prepublish.js
+65 silly existsSync /Users/zhouqihang/Html/vue-lerna-demo/packages/todo/scripts/prepublish.js
+66 verbose execScript No prepublish script found at /Users/zhouqihang/Html/vue-lerna-demo/packages/todo/scripts/prepublish.js
+67 silly existsSync /Users/zhouqihang/Html/vue-lerna-demo/packages/todos/scripts/prepublish.js
+68 verbose execScript No prepublish script found at /Users/zhouqihang/Html/vue-lerna-demo/packages/todos/scripts/prepublish.js
+69 verbose publishing load
+70 silly publishTaggedInDir latest load
+71 silly getExecOpts { cwd: '/Users/zhouqihang/Html/vue-lerna-demo/packages/load' }
+72 verbose publishing todo
+73 silly publishTaggedInDir latest todo
+74 silly getExecOpts { cwd: '/Users/zhouqihang/Html/vue-lerna-demo/packages/todo' }
+75 error publish Retrying failed publish: load
+76 verbose publish error undefined
+77 verbose publishing load
+78 silly publishTaggedInDir latest load
+79 silly getExecOpts { cwd: '/Users/zhouqihang/Html/vue-lerna-demo/packages/load' }
+80 error publish Retrying failed publish: todo
+81 verbose publish error undefined
+82 verbose publishing todo
+83 silly publishTaggedInDir latest todo
+84 silly getExecOpts { cwd: '/Users/zhouqihang/Html/vue-lerna-demo/packages/todo' }
+85 error publish Retrying failed publish: load
+86 verbose publish error undefined
+87 verbose publishing load
+88 silly publishTaggedInDir latest load
+89 silly getExecOpts { cwd: '/Users/zhouqihang/Html/vue-lerna-demo/packages/load' }
+90 error publish Retrying failed publish: todo
+91 verbose publish error undefined
+92 verbose publishing todo
+93 silly publishTaggedInDir latest todo
+94 silly getExecOpts { cwd: '/Users/zhouqihang/Html/vue-lerna-demo/packages/todo' }
+95 error publish Retrying failed publish: load
+96 verbose publish error undefined
+97 verbose publishing load
+98 silly publishTaggedInDir latest load
+99 silly getExecOpts { cwd: '/Users/zhouqihang/Html/vue-lerna-demo/packages/load' }
+100 error publish Retrying failed publish: todo
+101 verbose publish error undefined
+102 verbose publishing todo
+103 silly publishTaggedInDir latest todo
+104 silly getExecOpts { cwd: '/Users/zhouqihang/Html/vue-lerna-demo/packages/todo' }
+105 error publish Retrying failed publish: todo
+106 verbose publish error undefined
+107 verbose publishing todo
+108 silly publishTaggedInDir latest todo
+109 silly getExecOpts { cwd: '/Users/zhouqihang/Html/vue-lerna-demo/packages/todo' }
+110 error publish Retrying failed publish: load
+111 verbose publish error undefined
+112 verbose publishing load
+113 silly publishTaggedInDir latest load
+114 silly getExecOpts { cwd: '/Users/zhouqihang/Html/vue-lerna-demo/packages/load' }
+115 error publish Ran out of retries while publishing load Error: Command failed: npm publish --tag latest
+115 error publish npm ERR! publish Failed PUT 403
+115 error publish npm ERR! code E403
+115 error publish npm ERR! no_perms Private mode enable, only admin can publish this module: load
+115 error publish
+115 error publish npm ERR! A complete log of this run can be found in:
+115 error publish npm ERR!     /Users/zhouqihang/.npm/_logs/2018-06-03T04_34_09_366Z-debug.log
+115 error publish
+115 error publish     at Promise.all.then.arr (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
+115 error publish     at <anonymous>
+115 error publish     at process._tickCallback (internal/process/next_tick.js:188:7)
+116 error execute callback with error
+117 error Error: Command failed: npm publish --tag latest
+117 error npm ERR! publish Failed PUT 403
+117 error npm ERR! code E403
+117 error npm ERR! no_perms Private mode enable, only admin can publish this module: load
+117 error
+117 error npm ERR! A complete log of this run can be found in:
+117 error npm ERR!     /Users/zhouqihang/.npm/_logs/2018-06-03T04_34_09_366Z-debug.log
+117 error
+117 error     at Promise.all.then.arr (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
+117 error     at <anonymous>
