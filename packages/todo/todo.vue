@@ -1,5 +1,7 @@
 <template>
-    <li @click="onClick" ref="li">{{ todo.text }} -- {{ todo.created_at }}</li>
+    <li @click="onClick" ref="li">
+      {{ todo.text }} -- {{ todo.created_at }}
+    </li>
 </template>
 
 <script>
